@@ -1,0 +1,55 @@
+{
+  "name": "@solid/access-control-policy",
+  "version": "0.0.1",
+  "description": "Implementation of the Access Control Policy specification.",
+  "license": "MIT",
+  "repository": "https://github.com/solid/access-control-policy",
+  "bugs": "https://github.com/solid/access-control-policy/issues",
+  "homepage": "https://github.com/solid/access-control-policy#readme",
+  "keywords": [
+    "ACP",
+    "Access Control",
+    "Policy",
+    "Matcher",
+    "ACL",
+    "Solid"
+  ],
+  "contributors": [
+    "Matthieu Bosquet <matthieu@cognithive.com> (https://github.com/matthieubosquet/)"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "audit": "npm audit --production --audit-level=high",
+    "build": "tsc",
+    "lint": "npm run lint:eslint -- --cache --fix && npm run lint:prettier -- --write",
+    "lint:ci": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint --ignore-path .gitignore .",
+    "lint:prettier": "prettier --ignore-path .gitignore '**/*.{css,html,json,md,mdx,yml}'",
+    "prepublishOnly": "npm run audit && npm ci --ignore-scripts && npm run build && npm run test",
+    "start": "npm run build -- --watch",
+    "test": "npm run test:unit",
+    "test:unit": "jest --config .jestrc.js --roots test/unit --"
+  },
+  "devDependencies": {
+    "@solid/eslint-config-base": "^0.4.0",
+    "@tsconfig/node14": "^1.0.1",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^16.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^25.3.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "ts-jest": "^27.1.2",
+    "typescript": "^4.5.4"
+  }
+}
