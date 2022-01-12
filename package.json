@@ -15,7 +15,7 @@
     "Solid"
   ],
   "contributors": [
-    "Matthieu Bosquet <matthieu@cognithive.com> (https://github.com/matthieubosquet/)"
+    "Matthieu Bosquet <matthieu@cognithive.com> (https://github.com/matthieubosquet)"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,7 +32,7 @@
     "prepublishOnly": "npm run audit && npm ci --ignore-scripts && npm run build && npm run test",
     "start": "npm run build -- --watch",
     "test": "npm run test:unit",
-    "test:unit": "jest --config .jestrc.js --roots test/unit --"
+    "test:unit": "jest --config .jestrc.js"
   },
   "devDependencies": {
     "@solid/eslint-config-base": "^0.4.0",
