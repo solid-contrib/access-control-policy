@@ -13,10 +13,10 @@ export type { IACL } from "./type/i_acl";
 export type { IAccessMode } from "./type/i_access_mode";
 
 // Constants
+export { ACCESS_MODES } from "./constant/access_modes";
+export { ACL } from "./constant/acl";
 export { ACP } from "./constant/acp";
 export { MATCHER_ATTRIBUTES } from "./constant/matcher_attributes";
-export { ACL } from "./constant/acl";
-export { ACCESS_MODES } from "./constant/access_modes";
 
 // Algorithms
 export { allowAccessModes } from "./algorithm/allow_access_modes";
