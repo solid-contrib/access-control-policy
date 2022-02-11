@@ -11,4 +11,6 @@ export interface IContext {
   readonly creator?: string[];
   // The owner(s) of the target resource
   readonly owner?: string[];
+  // The vc types presented as part of the request
+  readonly vc?: string[];
 }

@@ -3,6 +3,7 @@ import type { IMatcher } from "../type/i_matcher";
 import { matchAgent } from "./match_agent";
 import { matchClient } from "./match_client";
 import { matchIssuer } from "./match_issuer";
+import { matchVc } from "./match_vc";
 
 /**
  * The match algorithm
@@ -17,13 +18,17 @@ import { matchIssuer } from "./match_issuer";
  */
 export function match(matcher: IMatcher, context: IContext): boolean {
   if (
-    matcher.agent.length + matcher.client.length + matcher.issuer.length >
+    matcher.agent.length +
+      matcher.client.length +
+      matcher.issuer.length +
+      matcher.vc.length >
     0
   ) {
     return (
       (matcher.agent.length === 0 || matchAgent(matcher, context)) &&
       (matcher.client.length === 0 || matchClient(matcher, context)) &&
-      (matcher.issuer.length === 0 || matchIssuer(matcher, context))
+      (matcher.issuer.length === 0 || matchIssuer(matcher, context)) &&
+      (matcher.vc.length === 0 || matchVc(matcher, context))
     );
   }
   return false;

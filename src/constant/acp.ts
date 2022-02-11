@@ -22,6 +22,7 @@ export const ACP: IACP = {
   agent: "http://www.w3.org/ns/solid/acp#agent",
   client: "http://www.w3.org/ns/solid/acp#client",
   issuer: "http://www.w3.org/ns/solid/acp#issuer",
+  vc: "http://www.w3.org/ns/solid/acp#vc",
   /* eslint-disable @typescript-eslint/naming-convention */
   AuthenticatedAgent: "http://www.w3.org/ns/solid/acp#AuthenticatedAgent",
   CreatorAgent: "http://www.w3.org/ns/solid/acp#CreatorAgent",

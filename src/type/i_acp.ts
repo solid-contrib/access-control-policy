@@ -35,6 +35,7 @@ export interface IACP extends IVocabulary {
   readonly agent: "http://www.w3.org/ns/solid/acp#agent";
   readonly client: "http://www.w3.org/ns/solid/acp#client";
   readonly issuer: "http://www.w3.org/ns/solid/acp#issuer";
+  readonly vc: "http://www.w3.org/ns/solid/acp#vc";
   // Named Individuals
   /* eslint-disable @typescript-eslint/naming-convention */
   readonly PublicAgent: "http://www.w3.org/ns/solid/acp#PublicAgent";
