@@ -5,4 +5,5 @@ export const EMPTY_MATCHER_X: IMatcher = {
   agent: [],
   client: [],
   issuer: [],
+  vc: [],
 };

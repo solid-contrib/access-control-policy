@@ -6,4 +6,5 @@ export const ALWAYS_MATCHER_X: IMatcher = {
   agent: [ACP.PublicAgent],
   client: [],
   issuer: [],
+  vc: [],
 };

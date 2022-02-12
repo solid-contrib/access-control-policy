@@ -18,15 +18,27 @@ describe("match", () => {
   it("returns false when one condition doesn't match", () => {
     expect(
       match(
-        { ...EMPTY_MATCHER_X, agent: ["x"], client: ["x"], issuer: ["x"] },
-        { ...EMPTY_CONTEXT_X, agent: "x", client: "x" }
+        {
+          ...EMPTY_MATCHER_X,
+          agent: ["x"],
+          client: ["x"],
+          issuer: ["x"],
+          vc: ["x"],
+        },
+        { ...EMPTY_CONTEXT_X, agent: "x", client: "x", issuer: "y", vc: ["x"] }
       )
     ).toBe(false);
 
     expect(
       match(
-        { ...EMPTY_MATCHER_X, agent: ["x"], client: ["x"], issuer: ["x"] },
-        { ...EMPTY_CONTEXT_X, agent: "x", client: "x", issuer: "y" }
+        {
+          ...EMPTY_MATCHER_X,
+          agent: ["x"],
+          client: ["x"],
+          issuer: ["x"],
+          vc: ["x"],
+        },
+        { ...EMPTY_CONTEXT_X, agent: "x", client: "x", issuer: "y", vc: ["x"] }
       )
     ).toBe(false);
   });
@@ -34,8 +46,14 @@ describe("match", () => {
   it("returns true when all conditions match", () => {
     expect(
       match(
-        { ...EMPTY_MATCHER_X, agent: ["x"], client: ["x"], issuer: ["x"] },
-        { ...EMPTY_CONTEXT_X, agent: "x", client: "x", issuer: "x" }
+        {
+          ...EMPTY_MATCHER_X,
+          agent: ["x"],
+          client: ["x"],
+          issuer: ["x"],
+          vc: ["x"],
+        },
+        { ...EMPTY_CONTEXT_X, agent: "x", client: "x", issuer: "x", vc: ["x"] }
       )
     ).toBe(true);
   });
