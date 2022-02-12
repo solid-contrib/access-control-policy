@@ -1,6 +1,6 @@
 {
   "name": "@solid/access-control-policy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Implementation of the Access Control Policy specification.",
   "license": "MIT",
   "repository": "https://github.com/solid/access-control-policy",
