@@ -1,6 +1,6 @@
-import { match } from "../../../src/algorithm/match";
-import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x";
-import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x";
+import { match } from "../../../src/algorithm/match.js";
+import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x.js";
+import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x.js";
 
 describe("match", () => {
   it("returns false when something is undefined", () => {

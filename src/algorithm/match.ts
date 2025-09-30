@@ -1,9 +1,9 @@
-import type { IContext } from "../type/i_context";
-import type { IMatcher } from "../type/i_matcher";
-import { matchAgent } from "./match_agent";
-import { matchClient } from "./match_client";
-import { matchIssuer } from "./match_issuer";
-import { matchVc } from "./match_vc";
+import type { IContext } from "../type/i_context.js";
+import type { IMatcher } from "../type/i_matcher.js";
+import { matchAgent } from "./match_agent.js";
+import { matchClient } from "./match_client.js";
+import { matchIssuer } from "./match_issuer.js";
+import { matchVc } from "./match_vc.js";
 
 /**
  * The match algorithm

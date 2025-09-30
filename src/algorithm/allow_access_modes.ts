@@ -1,7 +1,7 @@
-import type { IAccessMode } from "../type/i_access_mode";
-import type { IContext } from "../type/i_context";
-import type { IPolicy } from "../type/i_policy";
-import { applyPolicy } from "./apply_policy";
+import type { IAccessMode } from "../type/i_access_mode.js";
+import type { IContext } from "../type/i_context.js";
+import type { IPolicy } from "../type/i_policy.js";
+import { applyPolicy } from "./apply_policy.js";
 
 /**
  * # The allow access modes algorithm
@@ -18,8 +18,8 @@ export function allowAccessModes(
   policies: IPolicy[],
   context: IContext
 ): Set<IAccessMode> {
-  const allowedModes: Set<IAccessMode> = new Set();
-  const deniedModes: Set<IAccessMode> = new Set();
+  const allowedModes = new Set<IAccessMode>();
+  const deniedModes = new Set<IAccessMode>();
 
   // Loop through all policies
   for (const policy of policies) {

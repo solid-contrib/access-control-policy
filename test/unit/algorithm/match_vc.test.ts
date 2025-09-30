@@ -1,6 +1,6 @@
-import { matchVc } from "../../../src/algorithm/match_vc";
-import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x";
-import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x";
+import { matchVc } from "../../../src/algorithm/match_vc.js";
+import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x.js";
+import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x.js";
 
 describe("matchVc", () => {
   it("returns false when something is undefined", () => {

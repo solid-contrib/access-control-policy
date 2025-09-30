@@ -1,4 +1,4 @@
-import type { IIriResource } from "./i_iri_resource";
+import type { IIriResource } from "./i_iri_resource.js";
 
 export interface IMatcher extends IIriResource {
   readonly agent: string[];

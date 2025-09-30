@@ -1,6 +1,6 @@
-import type { IContext } from "../type/i_context";
-import type { IPolicy } from "../type/i_policy";
-import { match } from "./match";
+import type { IContext } from "../type/i_context.js";
+import type { IPolicy } from "../type/i_policy.js";
+import { match } from "./match.js";
 
 /**
  * # The apply policy algorithm

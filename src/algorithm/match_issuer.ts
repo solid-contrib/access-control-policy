@@ -1,5 +1,5 @@
-import type { IContext } from "../type/i_context";
-import type { IMatcher } from "../type/i_matcher";
+import type { IContext } from "../type/i_context.js";
+import type { IMatcher } from "../type/i_matcher.js";
 
 /**
  * The issuer matching algorithm

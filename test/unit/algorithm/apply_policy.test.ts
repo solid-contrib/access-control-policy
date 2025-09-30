@@ -1,7 +1,7 @@
-import { applyPolicy } from "../../../src/algorithm/apply_policy";
-import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x";
-import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x";
-import { EMPTY_POLICY_X } from "../../fixture/empty_policy_x";
+import { applyPolicy } from "../../../src/algorithm/apply_policy.js";
+import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x.js";
+import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x.js";
+import { EMPTY_POLICY_X } from "../../fixture/empty_policy_x.js";
 
 describe("applyPolicy", () => {
   it("returns false when something is undefined", () => {

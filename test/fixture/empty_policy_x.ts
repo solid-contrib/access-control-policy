@@ -1,4 +1,4 @@
-import type { IPolicy } from "../../src/type/i_policy";
+import type { IPolicy } from "../../src/type/i_policy.js";
 
 // TODO all sets?
 export const EMPTY_POLICY_X: IPolicy = {

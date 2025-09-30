@@ -1,15 +1,15 @@
-import type { IACP } from "../type/i_acp";
+import type { IACP } from "../type/i_acp.js";
 
 export const ACP: IACP = {
   iri: "http://www.w3.org/ns/solid/acp#",
   prefix: "acp",
   version: "2021-10-28",
-  /* eslint-disable @typescript-eslint/naming-convention */
+   
   AccessControlResource: "http://www.w3.org/ns/solid/acp#AccessControlResource",
   AccessControl: "http://www.w3.org/ns/solid/acp#AccessControl",
   Policy: "http://www.w3.org/ns/solid/acp#Policy",
   Matcher: "http://www.w3.org/ns/solid/acp#Matcher",
-  /* eslint-enable @typescript-eslint/naming-convention */
+   
   accessControlResource: "http://www.w3.org/ns/solid/acp#accessControlResource",
   accessControl: "http://www.w3.org/ns/solid/acp#accessControl",
   memberAccessControl: "http://www.w3.org/ns/solid/acp#memberAccessControl",
@@ -23,11 +23,11 @@ export const ACP: IACP = {
   client: "http://www.w3.org/ns/solid/acp#client",
   issuer: "http://www.w3.org/ns/solid/acp#issuer",
   vc: "http://www.w3.org/ns/solid/acp#vc",
-  /* eslint-disable @typescript-eslint/naming-convention */
+   
   AuthenticatedAgent: "http://www.w3.org/ns/solid/acp#AuthenticatedAgent",
   CreatorAgent: "http://www.w3.org/ns/solid/acp#CreatorAgent",
   PublicAgent: "http://www.w3.org/ns/solid/acp#PublicAgent",
   OwnerAgent: "http://www.w3.org/ns/solid/acp#OwnerAgent",
   PublicClient: "http://www.w3.org/ns/solid/acp#PublicClient",
-  /* eslint-enable @typescript-eslint/naming-convention */
+   
 };

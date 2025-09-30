@@ -1,7 +1,7 @@
-import { matchClient } from "../../../src/algorithm/match_client";
-import { ACP } from "../../../src/constant/acp";
-import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x";
-import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x";
+import { matchClient } from "../../../src/algorithm/match_client.js";
+import { ACP } from "../../../src/constant/acp.js";
+import { EMPTY_CONTEXT_X } from "../../fixture/empty_context_x.js";
+import { EMPTY_MATCHER_X } from "../../fixture/empty_matcher_x.js";
 
 describe("matchClient", () => {
   it("returns false when something is undefined", () => {

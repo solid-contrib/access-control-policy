@@ -1,4 +1,4 @@
-import * as m from "../../src/mod";
+import * as m from "../../src/mod.js";
 
 it("exports the Constants", () => {
   expect(m.ACCESS_MODES).toBeDefined();

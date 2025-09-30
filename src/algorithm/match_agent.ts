@@ -1,6 +1,6 @@
-import { ACP } from "../constant/acp";
-import type { IContext } from "../type/i_context";
-import type { IMatcher } from "../type/i_matcher";
+import { ACP } from "../constant/acp.js";
+import type { IContext } from "../type/i_context.js";
+import type { IMatcher } from "../type/i_matcher.js";
 
 /**
  * # The agent matching algorithm

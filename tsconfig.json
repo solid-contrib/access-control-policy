@@ -1,15 +1,24 @@
 {
-  "extends": "@tsconfig/node18/tsconfig.json",
+  "extends": ["@tsconfig/node-lts", "@tsconfig/strictest"],
   "compilerOptions": {
+    // ESM
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    // Enforce explicit type imports/exports
+    "verbatimModuleSyntax": true,
+
+    // Compile each file independently
+    "isolatedModules": true,
+
+    // Ensure imports casing matches files casing on disk
+    "forceConsistentCasingInFileNames": true,
+
+    // Library output
+    "outDir": "./dist",
     "declaration": true,
-    "incremental": true,
-    "inlineSources": true,
-    "newLine": "lf",
-    "noUnusedLocals": true,
-    "outDir": "dist",
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "stripInternal": true
+    "declarationMap": true,
+    "sourceMap": true
   },
   "include": ["src/mod.ts"]
 }
