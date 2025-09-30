@@ -22,8 +22,8 @@
   "types": "./dist/mod.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js"
+      "types": "./dist/mod.d.ts",
+      "import": "./dist/mod.js"
     }
   },
   "files": [
