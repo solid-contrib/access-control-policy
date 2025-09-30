@@ -12,10 +12,8 @@ export interface IACL extends IVocabulary {
   readonly prefix: "acl";
   readonly version: "2001-04-20";
   // Classes
-   
   readonly Read: "http://www.w3.org/ns/auth/acl#Read";
   readonly Write: "http://www.w3.org/ns/auth/acl#Write";
   readonly Append: "http://www.w3.org/ns/auth/acl#Append";
   readonly Control: "http://www.w3.org/ns/auth/acl#Control";
-   
 }

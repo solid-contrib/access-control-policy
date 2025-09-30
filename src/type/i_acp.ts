@@ -12,12 +12,10 @@ export interface IACP extends IVocabulary {
   readonly prefix: "acp";
   readonly version: "2021-10-28";
   // Classes
-   
   readonly AccessControlResource: "http://www.w3.org/ns/solid/acp#AccessControlResource";
   readonly AccessControl: "http://www.w3.org/ns/solid/acp#AccessControl";
   readonly Policy: "http://www.w3.org/ns/solid/acp#Policy";
   readonly Matcher: "http://www.w3.org/ns/solid/acp#Matcher";
-   
   // Properties: Resource
   readonly accessControlResource: "http://www.w3.org/ns/solid/acp#accessControlResource";
   // Properties: Access Control Resource
@@ -37,11 +35,9 @@ export interface IACP extends IVocabulary {
   readonly issuer: "http://www.w3.org/ns/solid/acp#issuer";
   readonly vc: "http://www.w3.org/ns/solid/acp#vc";
   // Named Individuals
-   
   readonly PublicAgent: "http://www.w3.org/ns/solid/acp#PublicAgent";
   readonly AuthenticatedAgent: "http://www.w3.org/ns/solid/acp#AuthenticatedAgent";
   readonly CreatorAgent: "http://www.w3.org/ns/solid/acp#CreatorAgent";
   readonly OwnerAgent: "http://www.w3.org/ns/solid/acp#OwnerAgent";
   readonly PublicClient: "http://www.w3.org/ns/solid/acp#PublicClient";
-   
 }
